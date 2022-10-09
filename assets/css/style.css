@@ -1,0 +1,36 @@
+/********************************************
+                normalize 
+********************************************/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    background-color: #ffffff;
+}
+ul,li{
+    list-style: none;
+}
+a,
+a:focus,
+a:hover,
+a:active{
+    text-decoration: none;
+    outline: none;
+    color: #0573E6;
+}
+.container{
+    width: 95%;
+    max-width: 1400px;
+}
+/********************************************
+                 header_area_start 
+********************************************/
+
+
+
+/********************************************
+                 header_area_end
+********************************************/
