@@ -5,6 +5,7 @@
     font-family: shurjo;
     src: url(../fonts/solaimanlipi_04_07_05-webfont.woff);
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 /********************************************
                 normalize 
 ********************************************/
@@ -29,6 +30,7 @@ a:active{
     text-decoration: none;
     outline: none;
     color: #0573E6;
+    transition: 0.15s;
 }
 .container{
     width: 95%;
@@ -56,7 +58,7 @@ img{
 }
 .header_top i:hover{
     background-color: #F7F7F7;
-    border-radius: 4px;
+    border-radius: 50%;
 }
 .hum_search_inner {
 	display: flex;
@@ -83,19 +85,57 @@ img{
 .login_button a {
 	color: #0573e6 !important;
 	padding: 2px 21px;
-	font-size: 20px;
+	font-size: 19px;
 	font-weight: bold;
 	border: 1px solid #d9ced0;
 	opacity: 0.7;
 	justify-content: center;
 	display: flex;
 	align-items: center;
-    transition: 0.3s;
+	transition: 0.3s;
+	font-family: 'Roboto', sans-serif;
 }
 .login_button a:hover {
-	background-color: #F9F9F9;
+	background-color: #E6DCDC;
+}
+.language_edition {
+	display: flex;
+	justify-content: end;
+	font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.header_right_language {
+	padding-right: 8px;
+}
+.header_right_language a {
+	font-weight: bold;
+	color: #121212;
+}
+.header_right_language a:hover {
+	text-decoration: underline;
+}
+.header_right_edition {
+	color: #575757;
 }
 
+
+/* navbar_area_start */
+.nav_list {
+	display: flex;
+	justify-content: center;
+}
+.nav_list li a {
+	color: #000000;
+	padding: 10px 15px;
+	font-weight: bold;
+	transition: .15s;
+	display: inline-block;
+}
+.nav_list li a:hover {
+	color: #0573e6;
+	
+}
+/* navbar_area_end */
 
 /********************************************
                  header_area_end
