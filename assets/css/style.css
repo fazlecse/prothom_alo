@@ -1,4 +1,11 @@
 /********************************************
+                Typhography 
+********************************************/
+@font-face {
+    font-family: shurjo;
+    src: url(../fonts/solaimanlipi_04_07_05-webfont.woff);
+}
+/********************************************
                 normalize 
 ********************************************/
 *{
@@ -7,8 +14,10 @@
     padding: 0;
 }
 body{
-    font-size: 16px;
+    font-size: 14px;
+    color: #000;
     background-color: #ffffff;
+    font-family: shurjo;
 }
 ul,li{
     list-style: none;
@@ -24,11 +33,68 @@ a:active{
 .container{
     width: 95%;
     max-width: 1400px;
+    margin: auto;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+img{
+    width: 100%;
+    max-width: 100%;
 }
 /********************************************
                  header_area_start 
 ********************************************/
-
+.header_top i {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header_top i:hover{
+    background-color: #F7F7F7;
+    border-radius: 4px;
+}
+.hum_search_inner {
+	display: flex;
+	font-size: 20px;
+}
+.humburger_icon{
+	font-size: 25px;
+}
+.hum_search_time {
+	color: #575757;
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+}
+.notification_icon{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.login_notification_area{
+    display: flex;
+}
+.login_button a {
+	color: #0573e6 !important;
+	padding: 2px 21px;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid #d9ced0;
+	opacity: 0.7;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+    transition: 0.3s;
+}
+.login_button a:hover {
+	background-color: #F9F9F9;
+}
 
 
 /********************************************
