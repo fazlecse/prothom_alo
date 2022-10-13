@@ -168,7 +168,7 @@ p,time{
 	display: grid;
 	grid-gap: 32px;
 	grid-template-columns: repeat(3, 1fr) 300px;
-	grid-template-rows: repeat(4, 265px 205px 155px 155px);
+	/* grid-template-rows: repeat(4, 265px 205px 155px 155px); */
 
 }
 .item_list1{
@@ -188,11 +188,43 @@ p,time{
 	font-size: 11px;
 	color: #575757;
 }
+.border_left {
+	position: relative;
+}
+  .border_left::before {
+	content: "";
+	position: absolute;
+	background: #e2e2e2;
+	width: 1px;
+	height: 100%;
+	left: -15px;
+  }
+.border_bottom {
+	position: relative;
+}
+.border_bottom::before {
+	content: "";
+	position: absolute;
+	background: #e2e2e2;
+	width: 100%;
+	height: 1px;
+	bottom: 18px;
+}
+.border_top {
+	position: relative;
+}
+.border_top::before {
+	content: "";
+	position: absolute;
+	background: #e2e2e2;
+	width: calc(100% + 625px);
+	height: 1px;
+	top: -15px;
+}
 .item_list4 {
 	display: grid;
 	grid-column: 1/4;
 	position: relative;
-	grid-row: 2/4;
 }
 .item_list4::before {
 	content: "";
