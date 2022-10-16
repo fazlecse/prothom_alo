@@ -23,6 +23,13 @@ body{
 ul,li{
     list-style: none;
 }
+a:hover span{
+	color: #0573E6;
+}
+a:hover span::after{
+	color: #0573E6;
+}
+
 a{
 	color: #000;
 	text-decoration: none;
@@ -54,6 +61,19 @@ img{
 .title {
 	font-size: 16px;
 	padding-bottom: 10px;
+}
+
+.sub_title {
+	color: #D60000;
+}
+.sub_title::after {
+	content: "/";
+	color: #282831;
+	margin-left: 5px;
+	font-size: 20px;
+}
+.sub_title::after:hover {
+	color: #0573E6;
 }
 p,time{
     color: #575757;
@@ -221,10 +241,22 @@ p,time{
 	height: 1px;
 	top: -15px;
 }
+.item_list3 {
+	position: relative;
+}
+  .item_list3::before {
+	content: "";
+	position: absolute;
+	height: calc(100% + 33px);
+	width: 1px;
+	background: #e2e2e2;
+	left: -16px;
+}
 .item_list4 {
 	display: grid;
 	grid-column: 1/4;
 	position: relative;
+	/* grid-gap: 32px; */
 }
 .item_list4::before {
 	content: "";
